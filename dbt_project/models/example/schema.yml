@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: my_first_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: ticker
+        description: "The primary key for this table"
+        tests:
+          - not_null
+      
+      - name: t_date
+        tests:
+          - not_null
+    
+      - name: e_score
+        tests:
+          - not_null
+      
+      - name: rolling_average
+        tests:
+          - not_null
+      
+      - name: standard_deviation
+        tests:
+          - not_null
