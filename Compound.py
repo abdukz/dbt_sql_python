@@ -3,10 +3,10 @@ import pandas as pd
 
 # connect to postgres 
 con = psycopg2.connect(database='postgres', 
-                       user='great_hamilton', 
-                       password='5%vgj@nWVt', 
-                       host='35.188.222.122', 
-                       port='5432')
+                       user='*************', 
+                       password='*********', 
+                       host='*************', 
+                       port='****')
 
 # selecting columns from daily_returns table
 sql_query = pd.read_sql( "SELECT isin_code, DATE_PART('year', p_date) AS year, p_date, currency, one_day_pct FROM daily_returns " , con)
